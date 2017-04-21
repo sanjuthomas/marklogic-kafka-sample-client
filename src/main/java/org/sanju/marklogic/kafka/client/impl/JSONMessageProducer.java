@@ -9,7 +9,7 @@ import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.sanju.marklogic.kafka.client.beans.Account;
 import org.sanju.marklogic.kafka.client.beans.Client;
-import org.sanju.marklogic.kafka.client.beans.JSONQuoteRequest;
+import org.sanju.marklogic.kafka.client.beans.QuoteRequest;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -41,7 +41,7 @@ public class JSONMessageProducer {
         for (int i = 0; i < 10000; i++){
             final Account account = new Account("A" + i);
             final Client client = new Client("C" + i, account);
-            final JSONQuoteRequest quoteRequest = new JSONQuoteRequest("Q" + i, symbols[ThreadLocalRandom.current().nextInt(0, 14)], 
+            final QuoteRequest quoteRequest = new QuoteRequest("Q" + i, symbols[ThreadLocalRandom.current().nextInt(0, 14)], 
                     ThreadLocalRandom.current().nextInt(1, 100 + 1), client, new Date());
             final JsonNode jsonNode = MAPPER.valueToTree(quoteRequest);
             producer.send(new ProducerRecord<String, JsonNode>(topicName, jsonNode));
