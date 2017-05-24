@@ -1,4 +1,4 @@
-package org.sanju.marklogic.kafka.client.impl;
+package marklogic.kafka.client.impl;
 
 import java.util.Properties;
 

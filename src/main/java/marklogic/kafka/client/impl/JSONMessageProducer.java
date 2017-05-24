@@ -1,15 +1,16 @@
-package org.sanju.marklogic.kafka.client.impl;
+package marklogic.kafka.client.impl;
 
 import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.ThreadLocalRandom;
 
+import marklogic.kafka.client.beans.Account;
+import marklogic.kafka.client.beans.Client;
+import marklogic.kafka.client.beans.QuoteRequest;
+
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.sanju.marklogic.kafka.client.beans.Account;
-import org.sanju.marklogic.kafka.client.beans.Client;
-import org.sanju.marklogic.kafka.client.beans.QuoteRequest;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

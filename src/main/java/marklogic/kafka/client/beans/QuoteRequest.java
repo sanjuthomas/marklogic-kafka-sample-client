@@ -1,4 +1,4 @@
-package org.sanju.marklogic.kafka.client.beans;
+package marklogic.kafka.client.beans;
 
 import java.util.Date;
 
