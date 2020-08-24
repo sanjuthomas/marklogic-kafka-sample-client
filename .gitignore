@@ -3,3 +3,5 @@
 /.project
 /.classpath
 /.bin/
+.idea
+marklogic-kafka-client-impl.iml
