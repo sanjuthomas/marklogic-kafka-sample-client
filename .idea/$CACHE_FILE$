@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/Documents/john/api-service" value="1461182510000" />
+        <entry key="$USER_HOME$/Documents/john/gossamer-grizzly" value="1419906737000" />
+        <entry key="$USER_HOME$/Documents/john/gossamer-sample" value="1463343994000" />
+        <entry key="$USER_HOME$/Documents/john/tas-service" value="1443383777000" />
+        <entry key="$USER_HOME$/Documents/john/util-lib" value="1463157077000" />
+        <entry key="$USER_HOME$/Documents/john/workspace/db-lib" value="1463162753000" />
+        <entry key="$USER_HOME$/Documents/john/workspace/sl-service" value="1464552597000" />
+        <entry key="$USER_HOME$/Documents/john/workspace/thread-lib" value="1463171301000" />
+        <entry key="$USER_HOME$/Documents/john/workspace/util-lib" value="1463161973000" />
+        <entry key="$USER_HOME$/Documents/john/workspace/vishnu-api" value="1464541942000" />
+        <entry key="$USER_HOME$/Documents/john/workspace/vishnu-svc" value="1464541970000" />
+        <entry key="$USER_HOME$/Documents/open_source/bdd/serenity-core" value="20628316634000" />
+        <entry key="$USER_HOME$/Documents/open_source/marklogic-spring-batch" value="5860344080000" />
+        <entry key="$USER_HOME$/Documents/open_source/marklogic-spring-batch/jobs" value="5860344080000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+</project>

@@ -24,11 +24,11 @@ public class JSONMessageProducer {
     
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
       
         String [] symbols = new String [] {"ABB", "AAV", "AAPL", "BABA", "BAK", "BANC", "DAL", "DBD", "DBL", "RACE", "RATE", "RCG", "YELP", "YUME", "ZPIN"};
 
-        String topicName = "trades";
+        String topicName = "quote_request";
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
         props.put("acks", "all");
@@ -39,7 +39,8 @@ public class JSONMessageProducer {
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.connect.json.JsonSerializer");
         Producer<String, JsonNode> producer = new KafkaProducer<String, JsonNode>(props);
-        for (int i = 0; i < 10000; i++){
+        for (int i = 0; i < 1000; i++){
+            Thread.sleep(10000);
             final Account account = new Account("A" + i);
             final Client client = new Client("C" + i, account);
             final QuoteRequest quoteRequest = new QuoteRequest("Q" + i, symbols[ThreadLocalRandom.current().nextInt(0, 14)], 
